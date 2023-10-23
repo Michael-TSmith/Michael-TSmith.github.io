@@ -1,5 +1,3 @@
-import { loadGeometry } from "./3DViewer_Home";
-
 let isCartOverlayOpen = false;
 let catelog = [
   {

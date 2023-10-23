@@ -1,6 +1,5 @@
 //Three is the canvas display for 3D Models.
 import * as THREE from "three";
-import { ObjectLoader } from "three";
 
 window.onload = function () {
   loadGeometry();
