@@ -212,7 +212,3 @@ function generateOrderName(){
 
   return fNames[Math.floor(Math.random() * fNames.length)] + " " + lNames[Math.floor(Math.random() * lNames.length)];
 }
-
-window.onload = function initViewer(){
-  loadGeometry();
-}
