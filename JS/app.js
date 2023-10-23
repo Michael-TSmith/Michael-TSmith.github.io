@@ -1,3 +1,5 @@
+import { loadGeometry } from "./3DViewer_Home";
+
 let isCartOverlayOpen = false;
 let catelog = [
   {
@@ -209,4 +211,8 @@ function generateOrderName(){
   ];
 
   return fNames[Math.floor(Math.random() * fNames.length)] + " " + lNames[Math.floor(Math.random() * lNames.length)];
+}
+
+window.onload = function initViewer(){
+  loadGeometry();
 }
