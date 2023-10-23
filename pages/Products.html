@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>Mesh-terful Designs</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Mesh-terful Designs</h1>
+    </div>
+    <div class="left-side">
+      <a href="../index.html">Home</a>
+      <a href="../pages/About.html">About</a>
+      <a href="../pages/Products.html">Products</a>
+      <a href="../pages/Testimonial.html">Testimonials</a>
+      <a href="../pages/OrderStatus.html">Track Package</a>
+      <a href="../pages/ContactUs.html">Contact Us</a>
+    </div>
+    <div class="right-side">
+      <span id="shoppingCartIcon" onclick='openCartOverlay()'>
+        <a href="../pages/ShoppingCart.html">
+          <span id="cart_item_count">0</span>
+          <img src="../Images/icon-shopping-cart.png" alt="">
+        </a>
+      </span>
+    </div>
+  </nav>
+  <div class="products-container">
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/RepousseBowl_Static_Model.png" alt="Product 1">
+          <h2>Repousse Bowl</h2>
+          <hr>
+          <br>
+          <p>A Silver offering bowl c. 1880 CE</p>
+          <br>
+          <hr>
+          <p>Price: $19.99</p>
+          <button id="bowlBtn" onClick='addToCart("bowl")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/IPhone_Static_Model.png" alt="Product 1">
+          <h2>iPhone 13 Pro 2021</h2>
+          <hr>
+          <br>
+          <p>A render of the popular iPhone</p>
+          <br>
+          <hr>
+          <p>Price: $499.99</p>
+          <button id="iphoneBtn" onClick='addToCart("iphone")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/Merc_Flying_Car_Static_Model.png" alt="Product 1">
+          <h2>Merc Hovercar</h2>
+          <hr>
+          <br>
+          <p>A flying car...for mercs</p>
+          <br>
+          <hr>
+          <p>Price: $17.99</p>
+          <button id="mercCarBtn" onClick='addToCart("mercCar")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/Montana_Watch_Static_Model.png" alt="Product 1">
+          <h2>Montana Watch</h2>
+          <hr>
+          <br>
+          <p>Not sure if its just the states time.</p>
+          <br>
+          <br>
+          <hr>
+          <p>Price: $3.99</p>
+          <button id="watchBtn" onClick='addToCart("watch")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/New_Balance_Static_Model.png" alt="Product 1">
+          <h2>New Balance Shoe</h2>
+          <hr>
+          <br>
+          <p>Where is the old balance?</p>
+          <br>
+          <br>
+          <hr>
+          <p>Price: $12.99</p>
+          <button id="shoeBtn" onClick='addToCart("shoe")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/Porsch_911_Static_Model.png" alt="Product 1">
+          <h2>Porsch 911</h2>
+          <hr>
+          <br>
+          <p>Where speed meets your midlife <br> crisis with a stylish twist!</p>
+          <br>
+          <hr>
+          <p>Price: $129.99</p>
+          <button id="porsch911Btn" onClick='addToCart("porsch911")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/Tesla_Tequila_Static_Model.png" alt="Product 1">
+          <h2>Tesla Tequila</h2>
+          <hr>
+          <br>
+          <p> recharge your spirit!</p>
+          <br>
+          <br>
+          <hr>
+          <p>Price: $90.99</p>
+          <button id="teslaTequilaBtn" onClick='addToCart("teslaTequila")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/TravellersBackpack_Static_Model.png" alt="Product 1">
+          <h2>Travellers Backpack</h2>
+          <hr>
+          <br>
+          <p>Because adventures are better when <br> your stuff comes along!</p>
+          <br>
+          <hr>
+          <p>Price: $16.99</p>
+          <button id="backpackBtn" onClick='addToCart("backpack")'>Add to Cart</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="product-card">
+          <img src="../Images/3DObjects/Static Images/Viking_Helmet_Static_Image.png" alt="Product 1">
+          <h2>Viking Helmet</h2>
+          <hr>
+          <br>
+          <p>When you want to conquer your <br> day with a warrior's flair!</p>
+          <br>
+          <hr>
+          <p>Price: $29.99</p>
+          <button id="vikingHelmetBtn" onClick='addToCart("vikingHelmet")'>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------- FOOTER  ---------->
+  <div class="footer">
+    <div>
+      <div class="footer-column">Products</div>
+      <div>
+        <ul>
+          <li><a href="">3D Characters</a></li>
+          <li><a href="">3D Objects</a></li>
+        </ul>
+      </div>
+      </div>
+    <div>
+      <div>About Us</div>
+      <div>
+        <ul>
+          <li><a href="../pages/About.html">Our Story</a></li>
+          <li><a href="../pages/About.html">Our Mission</a></li>
+        </ul>
+      </div>
+    </div><div>
+      <div>Vendor Info</div>
+      <div>
+        <ul>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Vendor Information</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="../JS/app.js"></script>
+  <script type="module" src="../JS/3DViewer_Home.js"></script>
+</body>

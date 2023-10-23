@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>Mesh-terful Designs</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Mesh-terful Designs</h1>
+        </div>
+        <div class="left-side">
+            <a href="../index.html">Home</a>
+            <a href="../pages/About.html">About</a>
+            <a href="../pages/Products.html">Products</a>
+            <a href="../pages/Testimonial.html">Testimonials</a>
+            <a href="../pages/ContactUs.html">Contact Us</a>
+        </div>
+        <div class="right-side">
+            <span id="shoppingCartIcon" onclick='openCartOverlay()'>
+                <a href="../pages/ShoppingCart.html">
+                  <span id="cart_item_count">0</span>
+                  <img src="../Images/icon-shopping-cart.png" alt="">
+                </a>
+            </span>
+        </div>
+    </nav>
+    <div class="contact-form-container">
+        <div id="contact-form">
+            <h2>Contact Mesh-terful Designs</h2>
+            <div id="demo-tag">
+                <p>This form is a demo only</p>
+            </div>
+            <form action="" method="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="company">Company (optional):</label>
+                <input type="text" id="company" name="company">
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Model Request">Model Request</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Licensing and Usage">Licensing and Usage</option>
+                    <option value="Partnership Opportunities">Partnership Opportunities</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label for="model-name">Model Name (if relevant):</label>
+                <input type="text" id="model-name" name="model-name">
+
+                <label for="model-id">Model ID (if known):</label>
+                <input type="text" id="model-id" name="model-id">
+
+                <label for="attachment">Attach File (if needed):</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <label for="how-heard">How did you hear about us?</label>
+                <select id="how-heard" name="how-heard">
+                    <option value="Search Engine">Search Engine</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <div>Products</div>
+            <div>
+                <ul>
+                    <li><a href="">3D Characters</a></li>
+                    <li><a href="">3D Objects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>About Us</div>
+            <div>
+                <ul>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Our Mission</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>Vendor Info</div>
+            <div>
+                <ul>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Vendor Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <script src="../JS/app.js"></script>
+</body>
+
+</html>

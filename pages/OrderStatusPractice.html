@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <style>
+        .card-wrapper {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .order-id-input {
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .search-icon {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+        .search-icon:hover {
+            background-color: #0056b3;
+        }
+        
+        .order-details {
+            display: none;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Order Status</h1>
+        <input class="order-id-input" type="text" placeholder="Enter Order ID" id="order-id">
+        <button class="search-icon" onclick="showOrderDetails()">Search</button>
+        <div class="order-details" id="orderDetails">
+            <h2>Order Details</h2>
+            <p><strong>User Name:</strong> Mock User</p>
+            <p><strong>Order ID:</strong> <span id="orderIdDisplay">123456</span></p>
+            <p><strong>Tracking ID:</strong> <span id="trackingIdDisplay">7890ABC</span></p>
+            <p><strong>Status:</strong> Shipped</p>
+        </div>
+    </div>
+
+    <script src="../JS/app.js"></script>
+</body>
+</html>

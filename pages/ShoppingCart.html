@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <title>Mesh-terful Designs</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h2>Mesh-terful Designs</h2>
+    </div>
+    <div class="left-side">
+      <a href="../index.html">Home</a>
+      <a href="../pages/About.html">About</a>
+      <a href="../pages/Products.html">Products</a>
+      <a href="../pages/Testimonial.html">Testimonials</a>
+      <a href="../pages/OrderStatus.html">Track Package</a>
+      <a href="../pages/ContactUs.html">Contact Us</a>
+    </div>
+    <div class="right-side">
+      <span id="shoppingCartIcon" onclick='openCartOverlay()'>
+        <a href="../pages/ShoppingCart.html">
+          <span id="cart_item_count">0</span>
+          <img src="../Images/icon-shopping-cart.png" alt="">
+        </a>
+      </span>
+    </div>  
+  </nav>
+  <div class="shoppingCartContents">
+    <div id="cart-container">
+      <h1 id="cart-title">Shopping Cart</h1>
+      <div id="shoppingCartContainer">
+          <div id="left">
+              <div id="cart-items">
+                  <!-- Repeatable display of items -->
+                  <div class="product-card-inCart">
+                    <img src="../Images/3DObjects/Static Images/RepousseBowl_Static_Model.png" alt="Product 1">
+                    <h2>Repousse Bowl</h2>
+                    <p>Price: $19.99</p>
+                  </div>
+                  <div class="product-card-inCart">
+                    <img src="../Images/3DObjects/Static Images/Montana_Watch_Static_Model.png" alt="Product 1">
+                    <h2>Montana Watch</h2>
+                    <p>Not sure if its just the states time.</p>
+                    <p>Price: $3.99</p>
+                  </div>
+              </div>
+          </div>
+          <div id="right">
+            <div class="order-wrapper">
+              <div class="order-summary">
+                Order Summary
+              </div>
+              <p>Recipient Name: John Doe</p>
+              <p>Address: 123 Main St, City</p>
+              <p>Phone: (555) 123-4567</p>
+              <p>Order Total: $23.98</p>
+              <button id="confirm-button" onClick="openConfirmationOverlay()">Confirm Purchase</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Confirmation overlay -->
+  <div id="confirmation-overlay" class="overlay">
+    <div class="confirmation-header confirmation-box">
+      <h1>Order Confirmation</h1>
+      <p>Order Number: 123456789</p>
+      <p id="dynamicDate">Date: 2023-10-22</p>
+    </div>
+
+    <div class="shipping-address confirmation-box">
+        <h3>Shipping Address:</h3>
+        <p>John Doe</p>
+        <p>123 Main St</p>
+        <p>New York, NY 10001</p>
+    </div>
+
+    <div class="payment-info confirmation-box">
+      <h3>Payment Method: Credit Card (**** **** **** 1234)</h3>
+      <p>Subtotal: $23.98</p>
+      <p>Tax: $5.00</p>
+      <p>Shipping Fee: $10.00</p>
+      <p>Total: $38.98</p>
+    </div>
+
+    <div class="shipping-info confirmation-box">
+        <h3>Expected Delivery: November 6, 2023</h3>
+        <p>Shipping Method: Standard</p>
+        <p>Carrier: UPS</p>
+    </div>
+
+    <div class="payment-info confirmation-box">
+        <h3>Billing Address:</h3>
+        <p>John Doe</p>
+        <p>123 Main St</p>
+        <p>New York, NY 10001</p>
+    </div>
+
+    <a href="../pages/OrderStatus.html">
+      <button id="track-order">Order Status</button>
+    </a>
+      <button id="continue-shopping" onclick="openConfirmationOverlay()">Continue Shopping</button>
+
+    <p>Thank you for your purchase!</p>
+    <p>Need help? Contact us at Couldn'tWorkOnThisEnough@plzWorkWithMe.com</p>
+  </div>
+  <div class="footer">
+    <div>
+      <div>Products</div>
+      <div>
+        <ul>
+          <li><a href="">3D Characters</a></li>
+          <li><a href="">3D Objects</a></li>
+        </ul>
+      </div>
+      </div>
+    <div>
+      <div>About Us</div>
+      <div>
+        <ul>
+          <li><a href="">Our Story</a></li>
+          <li><a href="">Our Mission</a></li>
+        </ul>
+      </div>
+    </div><div>
+      <div>Vendor Info</div>
+      <div>
+        <ul>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Vendor Information</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/app.js"></script>
+</body>
+</html>
